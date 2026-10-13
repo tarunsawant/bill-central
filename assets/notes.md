@@ -1,0 +1,1 @@
+px-4 py-[162px] max-lg:py-[80px] max-md:py-[60px] max-sm:py-[40px]

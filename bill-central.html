@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Central</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="./assets/style.css">
+<link rel="icon" type="image/png" href="/assets/images/logo.png">
+<style type="text/tailwindcss">
+    @theme {
+        /* colors */
+        --color-text: rgba(0, 23, 31, 1);
+        --color-svg: rgba(234, 249, 255, 1);
+        --color-divbtn: rgba(0, 126, 167, 1);
+        --color-customwhite: rgba(254, 254, 254, 0.9);
+        --color-custompara: rgba(0, 23, 31, 0.9);
+        --color-customblack: rgba(0, 0, 0, 0.5);
+        --color-ppara: rgba(75, 75, 75, 0.9);
+        --color-para: rgba(255, 255, 255, 0.9);
+        --color-input: rgba(0, 23, 31, 0.5);
+        --color-cardborder: rgba(0, 23, 31, 0.1);
+        --color-more: rgba(0, 52, 89, 1);
+        --color-border: rgba(0, 0, 0, 0.2);
+        --color-inputbtn: rgba(0, 168, 232, 1);
+        --color-sky: rgba(0, 168, 232, 1);
+        --color-card: rgba(234, 249, 255, 0.94);
+        --color-downborder: rgba(255, 255, 255, 0.2);
+        --shadow-part: 0px 0px 13.9px 0px rgba(0, 0, 0, 0.1);
+        --shadow-accordion: 0px 4px 23.2px 0px rgba(0, 0, 0, 0.08);
+        /* leading */
+        --leading-99: 99%;
+        --leading-100: 100%;
+        --leading-150: 150%;
+        --leading-160: 160%;
+        --leading-180: 180%;
+        --leading-128: 128%;
+        --leading-110: 110.00000000000001%;
+       /* font-size */
+        --text-50: 50px;
+        --text-32: 32px;
+        --text-35: 35px;
+        --text-40: 40px;
+        --text-42: 42px;
+        --text-22: 22px;
+        --text-45: 45px;
+        --text-28: 28px;
+        --text-64: 64px;
+        --text-38: 38px;
+      }
+    </style>
+
+
+<body>
+    <section
+        class="relative overflow-visible bg-[url(/assets/images/bg.png)] rounded-bl-[220px] max-lg:rounded-none min-h-[810px] bg-cover bg-center bg-no-repeat px-4">
+        <div class="container max-w-[1140px] w-full mx-auto">
+            <div class="row">
+                <header class="relative overflow-hidden bg-transparent ">
+
+                    <div
+                        class="pointer-events-none absolute -left-20 -top-20 h-60 w-60 rotate-[25deg] border-l border-white/5">
+                    </div>
+                    <div
+                        class="pointer-events-none absolute left-[18%] -top-20 h-60 w-60 rotate-[25deg] border-l border-white/5">
+                    </div>
+                    <div
+                        class="pointer-events-none absolute left-[45%] -top-20 h-60 w-60 rotate-[25deg] border-l border-white/5">
+                    </div>
+
+                    <nav class="relative mx-auto flex max-w-[1140px] items-center justify-between px-5 py-3">
+
+                        <a href="#" class="shrink-0">
+                            <img width="105" height="40" src="/assets/images/logo.png" alt="Bill Central"
+                                class=" object-contain cursor-pointer">
+                        </a>
+                        <div class="navbar-content hidden items-center lg:flex gap-6">
+                            <a href="#about"
+                                class="text-base font-normal text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                About
+                            </a>
+
+                            <a href="#how-it-works"
+                                class="text-base font-normal text-nowrap text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                How It Works
+                            </a>
+
+                            <a href="#services"
+                                class="text-base font-normal text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                Services
+                            </a>
+
+                            <a href="#testimonials"
+                                class="text-base font-normal text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                Testimonials
+                            </a>
+
+                            <a href="#why-us"
+                                class="text-base font-normal text-nowrap text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                Why Us
+                            </a>
+
+                            <a href="#faq"
+                                class="text-base font-normal text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                FAQ
+                            </a>
+
+                        </div>
+
+
+                        <div class="navbar-btn hidden items-center lg:flex">
+                            <a href="#get-started"
+                                class="group relative ml-3 flex w-full max-w-[154px] items-center gap-[3px] overflow-hidden whitespace-nowrap rounded-r-[50px] rounded-b-[50px] bg-white hover:text-white  px-5 py-3 text-base font-bold text-text transition-all duration-300 ease-out hover:bg-[#00A8E8] hover:shadow-[0_8px_20px_rgba(0,0,0,0.18)]">
+
+                                <span
+                                    class="relative z-10 transition-transform duration-300 group-hover:translate-x-[2px]">
+                                    Get Started
+                                </span>
+
+
+                                <span class="relative z-10 group">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-1">
+                                        <path class="group-hover:fill-white" d="M6 19L19 6M6.52 6H19V18.48"
+                                            stroke="#00171F" stroke-width="1.93338" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+
+                            </a>
+                        </div>
+                        <button id="menu-btn" type="button"
+                            class="flex h-9 w-9 flex-col items-center justify-center gap-1.5 rounded-md border border-white/20 lg:hidden"
+                            aria-label="Open menu">
+
+                            <span id="line1" class="h-[1.5px] w-5 bg-white transition-all duration-300"></span>
+
+                            <span id="line2" class="h-[1.5px] w-5 bg-white transition-all duration-300"></span>
+
+                            <span id="line3" class="h-[1.5px] w-5 bg-white transition-all duration-300"></span>
+
+                        </button>
+
+                    </nav>
+
+
+                    <div id="mobile-menu"
+                        class="relative hidden bg-transparent  px-5 pb-5 pt-4 lg:hidden transition-all duration-900">
+
+                        <div class="flex flex-col gap-4 items-center justify-center ">
+
+                            <a href="#about"
+                                class="text-base font-normal text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                About
+                            </a>
+
+                            <a href="#how-it-works"
+                                class="text-base font-normal text-nowrap text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                How It Works
+                            </a>
+
+                            <a href="#services"
+                                class="text-base font-normal text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                Services
+                            </a>
+
+                            <a href="#testimonials"
+                                class="text-base font-normal text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                Testimonials
+                            </a>
+
+                            <a href="#why-us"
+                                class="text-base font-normal text-nowrap text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                Why Us
+                            </a>
+
+                            <a href="#faq"
+                                class="text-base font-normal text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                FAQ
+                            </a>
+
+                            <div class="navbar-btn">
+                                <a href="#get-started"
+                                    class="ml-3 flex items-center gap-[3px] bg-white px-5 py-3 text-base font-bold text-text hover:transition-all duration-600 max-w-[154px] w-full text-nowrap rounded-r-[50px] rounded-b-[50px]">
+
+                                    <span>Get Started</span>
+
+                                    <span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 19L19 6M6.52 6H19V18.48" stroke="#00171F" stroke-width="1.93338"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span>
+
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </header>
+                <div class="relative pt-[53px]">
+
+                    <div class="flex flex-col lg:flex-row">
+
+
+                        <div class="relative z-20 w-full lg:w-1/2">
+
+                            <div class="text-part">
+                                <p
+                                    class="text-64 mt-[13px] max-lg:text-center max-lg:mx-auto text-white  max-sm:text-40 font-normal leading-[110.00000000000001%] max-w-[612px]">
+                                    Easily Compare<span
+                                        class=" text-64 text-white font-bold leading-[110.00000000000001%] max-sm:text-40 max-w-[612px] max-sm:text-45">Energy,
+                                        Gas, and Internet</span>Plans
+                                </p>
+                                <p
+                                    class="max-w-[506px] w-full text-para text-base leading-[150%]  font-normal mt-4 max-lg:text-center max-lg:mx-auto">
+                                    Find and switch to the best energy, gas, and internet plans with ease. Our
+                                    platform
+                                    simplifies your search, letting you compare providers and make informed
+                                    decisions, all
+                                    in one place.
+                                </p>
+                                <div
+                                    class="part flex w-full max-w-[490px] rounded-r-[100px] rounded-b-[100px] rounded-bl-[69px] mt-[42px] items-center border border-solid border-border bg-white py-[9px] pl-[22px] pr-[9px] max-lg:text-center max-lg:mx-auto">
+
+                                    <input required type="text" placeholder="Start typing your address"
+                                        class="min-w-0 flex-1 bg-transparent text-[16px] font-normal text-input outline-none placeholder:text-input placeholder:text-base placeholder:leading-[110.00000000000001%] placeholder:font-normal">
+
+                                    <button type="button"
+                                        class="flex items-center gap-[3px] cursor-pointer rounded-r-[50px] rounded-b-[50px] rounded-bl-[42px] bg-inputbtn px-5 py-3 text-base font-bold leading-[100%] text-white hover:bg-more hover:transition-all hover:duration-400">
+                                        <span>Compare</span>
+
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 19L19 6M6.52 6H19V18.48" stroke="white" stroke-width="1.93338"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative z-20 mt-10 w-full lg:mt-0 lg:w-1/2">
+
+                            <img height="816" width="618" src="/assets/images/sec-1-img.png" alt="Bill Central"
+                                class="relative cursor-pointer mx-auto h-[816px] w-[618px] object-contain lg:absolute">
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="relative z-10 px-4 bg-white">
+
+        <div class="mx-auto w-full max-w-[1140px] px-4">
+
+            <div class="flex flex-col items-start justify-between gap-8 pt-[54px] ">
+
+
+                <div class="relative z-10 shrink-0">
+
+                    <p
+                        class="text-38 font-normal leading-[110.00000000000001%] max-w-[548px] w-full text-more max-lg:text-center max-lg:mx-auto">
+                        More than <span
+                            class="text-38 font-bold leading-[110.00000000000001%] max-w-[548px] w-full text-sky">80,000</span>+
+                        companies trust bill central
+                    </p>
+
+                </div>
+                <div class="w-full max-w-[1129px] overflow-hidden bg-white py-8">
+                    <div id="logo-track"
+                        class="logos flex justify-between gap-[51px] items-center max-w-[1129px]  w-max">
+                        <img height="62" width="126" class="cursor-pointer" src="/assets/images/icon-1.png"
+                            alt="icon-1">
+                        <img height="62" width="126" class="cursor-pointer" src="/assets/images/icon-2.png"
+                            alt="icon-2">
+                        <img height="62" width="126" class="cursor-pointer" src="/assets/images/icon-3.png"
+                            alt="icon-3">
+                        <img height="62" width="126" class="cursor-pointer" src="/assets/images/icon-4.png"
+                            alt="icon-4">
+                        <img height="62" width="126" class="cursor-pointer" src="/assets/images/icon-5.png"
+                            alt="icon-5">
+                        <img height="62" width="126" class="cursor-pointer" src="/assets/images/icon-6.png"
+                            alt="icon-6">
+                        <img height="62" width="63" class="cursor-pointer" src="/assets/images/icon-7.png" alt="icon-7">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section
+        class="section-parent-3 px-4 pt-[180px] max-lg:pt-[80px] max-md:pt-[60px] max-sm:pt-[40px] pb-[162px] max-lg:pb-[80px] max-md:pb-[60px] max-sm:pb-[40px]">
+        <div class="container max-w-[1140px] w-full mx-auto ">
+            <div class="row">
+                <div
+                    class="card-1-2-sec-2 max-lg:flex-col-reverse max-lg:justify-center max-lg:items-center flex gap-[75px]">
+                    <div class="card-1-sce-2">
+                        <img height="451" width="507" class="cursor-pointer mt-[18px] mb-[18px]"
+                            src="/assets/images/sec-2.png" alt="sec-2-img">
+                    </div>
+                    <div class="card-2-sec-2">
+                        <p
+                            class="sec-2-head text-5xl max-sm:text-42 max-lg:text-center max-lg:mx-auto text-text font-normal leading-[110.00000000000001%] max-w-[409px] w-full">
+                            <span
+                                class="sec-2-span text-5xl max-sm:text-42 text-text font-bold leading-[110.00000000000001%] max-lg:text-center">Switching
+                                Energy</span> Made Simple
+                        </p>
+                        <p
+                            class="sec-2-para text-text text-base max-lg:text-center font-nrmal leading-[150%] max-w-[558px] w-full mt-[16px]">
+                            Say goodbye to confusing energy plans! We simplify the process by providing clear and
+                            competitive electricity and gas recommendations. Whether you're moving or just seeking a
+                            better deal, our platform connects you with the best energy providers quickly and easily,
+                            helping you save on energy bills.</p>
+                        <p
+                            class="beni text-2xl max-lg:text-center text-more leading-[110.00000000000001%] font-normal mt-[38px]">
+                            Benefits
+                            of Comparing Energy Plans</p>
+                        <div class="main-part-p">
+                            <ul
+                                class="list-disc pl-6 max-lg:ml-[85px] flex flex-col gap-2 text-base leading-[150%] text-text font-normal mt-[28px]">
+                                <li>Save money by finding cheaper deals.</li>
+                                <li>Get better customer service.</li>
+                                <li>Explore greener, more sustainable energy options.</li>
+                            </ul>
+                        </div>
+                        <button
+                            class="sec-2-btn max-lg:justify-center max-lg:items-center max-lg:flex max-lg:mx-auto cursor-pointer bg-sky flex items-center py-3 px-5 gap-[3px] mt-[42px] rounded-br-[50px] rounded-tr-[50px] rounded-bl-[43px] hover:bg-more hover:transition-all hover:duration-400">
+                            <p class="btn-p text-base font-bold leading-[100%] text-white ">Compare With Us</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 19L19 6M6.52 6H19V18.48" stroke="white" stroke-width="1.93338"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-parent-4">
+        <div class="container max-w-[1440px] mx-auto w-full">
+            <div class="row w-full">
+                <div class="mx-auto mb-8 max-w-[610px] w-full px-4 text-center">
+                    <h2 class=" text-5xl leading-[110.00000000000001%] max-sm:text-42 text-text font-normal ">
+                        Simple Steps To
+                        <span
+                            class=" text-5xl leading-[110.00000000000001%] text-text max-sm:text-42 font-bold">Switch</span>
+                    </h2>
+                    <p class="mx-auto mt-4 max-w-[610px] text-base font-normal leading-[160%] text-ppara">
+                        Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate
+                        sapien a a bibendum
+                    </p>
+                </div>
+                <div id="stepsContainer"
+                    class="flex flex-col max-lg:justify-center max-lg:items-center overflow-hidden px-4 sm:flex-row sm:px-0">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="max-w-[1140px] w-full mx-auto px-4 py-[162px] max-lg:py-[80px] max-md:py-[60px] max-sm:py-[40px]">
+        <div class="flex gap-[73px] items-center max-lg:flex-col">
+
+            <!-- Left: accordion -->
+            <div>
+                <h2 class="text-5xl max-w-[456px] w-full font-normal text-[#00171F] leading-110 mb-[46px]">
+                    Comprehensive <br />
+                    Utility <span class="font-bold">Comparisons</span>
+                </h2>
+
+                <div class="space-y-4 max-w-[558px] w-full">
+
+                    <!-- Item 1 (open by default) -->
+                    <details
+                        class="group bg-white max-w-[558px] w-full rounded-lg border border-[#0000001A] border-solid shadow-[0px_0px_13.9px_0px_#0000001A]"
+                        open>
+                        <summary
+                            class="flex items-center gap-6 p-[14px] cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span
+                                class="flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-600">
+                                <!-- bulb icon -->
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="white"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_83479_2726)">
+                                        <path
+                                            d="M13.0123 12.7354C12.4622 12.7354 12.0146 13.1829 12.0146 13.733C12.0146 14.2831 12.4622 14.7307 13.0123 14.7307H14.01V13.733C14.01 13.1829 13.5624 12.7354 13.0123 12.7354Z"
+                                            fill="white" />
+                                        <path
+                                            d="M20.9879 12.7354C20.4377 12.7354 19.9902 13.1829 19.9902 13.733V14.7307H20.9879C21.5379 14.7307 21.9855 14.2831 21.9855 13.733C21.9855 13.1829 21.538 12.7354 20.9879 12.7354Z"
+                                            fill="white" />
+                                        <path d="M17.9984 16.7227H16.0029V25.3614H17.9984V16.7227Z" fill="#007EA7" />
+                                        <path d="M23.8554 31.6738H10.1445V34H23.8554V31.6738Z" fill="#007EA7" />
+                                        <path
+                                            d="M25.0579 3.41425C23.0265 1.31648 20.3033 0.106423 17.3898 0.00681343C14.3331 -0.0975772 11.4397 1.00052 9.24298 3.09889C7.04912 5.19467 5.8214 8.02995 5.78594 11.0825C5.75692 13.5814 6.53275 15.9547 8.02934 17.9461C9.44685 19.8323 10.1201 22.1926 10.1438 25.3619H14.0106V16.7233H13.0129C11.3643 16.7233 10.023 15.382 10.023 13.7334C10.023 12.0848 11.3643 10.7436 13.0129 10.7436C14.6615 10.7436 16.0027 12.0848 16.0027 13.7334V14.7311H17.9981V13.7334C17.9981 12.0848 19.3393 10.7436 20.9879 10.7436C22.6365 10.7436 23.9778 12.0848 23.9778 13.7334C23.9778 15.382 22.6365 16.7233 20.9879 16.7233H19.9903V25.3619H23.8574C23.8905 22.192 24.5711 19.8215 25.9922 17.9183C27.4468 15.9704 28.2156 13.6526 28.2156 11.2153C28.2156 8.28754 27.0942 5.51707 25.0579 3.41425Z"
+                                            fill="#007EA7" />
+                                        <path d="M23.8554 27.3545H10.1445V29.682H23.8554V27.3545Z" fill="#007EA7" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_83479_2726">
+                                            <rect width="34" height="34" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                            <span class="flex-1 text-2xl font-normal text-[#00171F] leading-110">Electricity Plan
+                                Comparisons</span>
+                            <svg class="h-4 w-4 text-[#00171F] transition-transform duration-200 group-open:rotate-180"
+                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p
+                            class="px-4 pb-[14px] pl-[4.5rem] text-base font-normal text-[#00171F] max-w-[442px] w-full leading-[160%]">
+                            Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the
+                            best provider.
+                        </p>
+                    </details>
+
+                    <!-- Item 2 -->
+                    <details class="group bg-white rounded-lg border border-slate-200 shadow-sm">
+                        <summary
+                            class="flex items-center gap-4 p-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span
+                                class="flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-600">
+                                <!-- flame icon -->
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_83479_2754)">
+                                        <path
+                                            d="M3.75 0C2.38662 0 1.25 1.13662 1.25 2.5V28.75C1.25007 29.4403 1.80967 29.9999 2.5 30H17.5C18.1903 29.9999 18.7499 29.4403 18.75 28.75V23.125C18.75 22.7798 19.0298 22.5 19.375 22.5H20C20.7052 22.5 21.25 23.0448 21.25 23.75V25C21.25 27.0563 22.9437 28.75 25 28.75C27.0563 28.75 28.75 27.0563 28.75 25V8.75C28.75 7.57076 28.1944 6.45706 27.251 5.74951L23.2495 2.74902C22.6388 2.29109 21.8582 2.51259 21.499 3.00049C21.0895 3.55675 21.1974 4.33718 21.7505 4.75098L23.2495 5.87402C23.5648 6.11016 23.7502 6.48111 23.75 6.875V10C23.75 11.153 24.5589 12.1419 25.6323 12.4219C25.9656 12.5088 26.25 12.7798 26.25 13.125V25C26.25 25.7052 25.7052 26.25 25 26.25C24.2948 26.25 23.75 25.7052 23.75 25V23.75C23.75 21.6937 22.0563 20 20 20H19.375C19.0298 20 18.75 19.7202 18.75 19.375V2.5C18.75 1.13662 17.6134 3.75e-08 16.25 3.75e-08L3.75 0ZM4.375 2.5H15.625C15.9712 2.5 16.25 2.77875 16.25 3.125V11.875C16.25 12.2212 15.9712 12.5 15.625 12.5H4.375C4.02875 12.5 3.75 12.2212 3.75 11.875V3.125C3.75 2.77875 4.02875 2.5 4.375 2.5Z"
+                                            fill="#007EA7" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_83479_2754">
+                                            <rect width="30" height="30" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                            <span class="flex-1 text-2xl font-normal text-[#00171F] leading-110">Gas Plan
+                                Comparisons</span>
+                            <svg class="h-4 w-4 text-slate-500 transition-transform duration-200 group-open:rotate-180"
+                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p
+                            class="px-4 pb-[14px] pl-[4.5rem] text-base font-normal text-[#00171F] max-w-[442px] w-full leading-[160%]">
+                            Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the
+                            best provider.
+                        </p>
+                    </details>
+
+                    <!-- Item 3 -->
+                    <details class="group bg-white rounded-lg border border-slate-200 shadow-sm">
+                        <summary
+                            class="flex items-center gap-4 p-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span
+                                class="flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-600">
+                                <!-- wifi icon -->
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_83479_2762)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M29.9998 15.4216C29.9998 13.0491 29.3861 10.8216 28.3111 8.88538C32.8936 -1.48712 23.3998 0.0316301 22.8711 0.13538C20.8598 0.52913 18.9998 1.16038 17.2836 1.96163C17.0288 1.94745 16.7737 1.94036 16.5186 1.94038C10.1123 1.94038 4.74982 6.40788 3.37732 12.3979C6.75482 8.61038 9.11732 7.08163 10.5323 6.47038C10.3073 6.67205 10.0857 6.8758 9.86732 7.08163L9.65482 7.28788C9.51065 7.42455 9.36815 7.56288 9.22732 7.70288L8.98232 7.95288C8.85732 8.07871 8.7344 8.20538 8.61357 8.33288L8.35857 8.60288C7.8619 9.1331 7.38249 9.67922 6.92107 10.2404C6.74803 10.449 6.57719 10.6594 6.40857 10.8716L6.15857 11.1879L5.92982 11.4879L5.67232 11.8279L5.49732 12.0691C4.98928 12.7625 4.50239 13.4712 4.03732 14.1941L4.03482 14.1979C3.91899 14.3787 3.80649 14.557 3.69732 14.7329L3.67982 14.7616C3.56982 14.9375 3.46357 15.1116 3.36107 15.2841L3.34982 15.3016C3.07232 15.7658 2.8169 16.2087 2.58357 16.6304C1.36982 18.8304 0.778571 20.3679 0.753571 20.4591C-3.08143 34.1666 8.88482 28.3779 10.5548 27.5141C12.4089 28.4297 14.4495 28.9045 16.5173 28.9016C22.3798 28.9016 27.3673 25.1604 29.2236 19.9354H22.1411C21.0923 21.7054 19.0748 22.9054 16.7561 22.9054C13.3598 22.9054 10.6061 20.3316 10.6061 17.1579H29.8886C29.9627 16.5887 29.9998 16.0108 29.9998 15.4216ZM27.4811 2.15538C28.6423 2.93913 29.5736 4.16788 27.9736 8.31288C26.4282 5.82674 24.118 3.90907 21.3898 2.84788C22.6373 2.24538 25.7273 0.97163 27.4811 2.15538ZM2.80982 27.4866C1.86357 26.5166 1.69732 24.1554 3.78357 19.8516C4.83416 22.8597 6.91299 25.4002 9.65357 27.0254C8.30357 27.7691 4.71607 29.4429 2.80982 27.4866ZM10.5748 13.4704C10.6823 10.3854 13.3686 7.91538 16.6673 7.91538C19.9673 7.91538 22.6511 10.3854 22.7598 13.4704H10.5748Z"
+                                            fill="#007EA7" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_83479_2762">
+                                            <rect width="30" height="30" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                            <span class="flex-1 text-2xl font-normal text-[#00171F] leading-110">Internet Plan
+                                Comparisons</span>
+                            <svg class="h-4 w-4 text-slate-500 transition-transform duration-200 group-open:rotate-180"
+                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p
+                            class="px-4 pb-[14px] pl-[4.5rem] text-base font-normal text-[#00171F] max-w-[442px] w-full leading-[160%]">
+                            Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the
+                            best provider.
+                        </p>
+                    </details>
+
+                    <!-- Item 4 -->
+                    <details class="group bg-white rounded-lg border border-slate-200 shadow-sm">
+                        <summary
+                            class="flex items-center gap-4 p-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span
+                                class="flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-600">
+                                <!-- package icon -->
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M31.8425 16.4179L28.3766 11.3129L31.8425 6.20793C32.0045 5.96444 32.0438 5.6605 31.9495 5.384C31.8543 5.10751 31.6364 4.89051 31.359 4.79901L20.0466 1.04904C19.6419 0.912602 19.2043 1.06641 18.9699 1.41797L16 5.87288L13.03 1.41797C12.7938 1.0646 12.3525 0.911664 11.9533 1.04904L0.640889 4.79901C0.363517 4.89057 0.145581 5.10757 0.0503942 5.384C-0.0439176 5.6605 -0.0045429 5.96444 0.157518 6.208L3.62337 11.313L0.157581 16.4179C-0.0044804 16.6614 -0.0438551 16.9654 0.0504567 17.2418C0.145643 17.5183 0.363579 17.7353 0.640952 17.8268L11.9534 21.5768C12.3515 21.7107 12.7944 21.5613 13.03 21.2079L16 16.753L18.97 21.2079C19.2059 21.5616 19.649 21.7106 20.0467 21.5768L31.3591 17.8268C31.6365 17.7353 31.8544 17.5183 31.9496 17.2418C32.0439 16.9654 32.0045 16.6614 31.8425 16.4179ZM16 14.0751L7.71365 11.313L16 8.55085L24.2864 11.313L16 14.0751Z"
+                                        fill="#007EA7" />
+                                    <path
+                                        d="M20.6397 23.3563C19.4597 23.7522 18.1256 23.3229 17.4098 22.2485L16 20.1338L14.59 22.2485C13.8755 23.3208 12.543 23.7541 11.3554 23.3545L3.8125 20.8403V26.3134C3.8125 26.7172 4.07069 27.0752 4.45337 27.2024L15.6978 30.9506C15.7317 30.9625 15.7655 30.9716 15.7994 30.979C15.7994 30.979 15.8003 30.979 15.8003 30.9799H15.8013C15.8672 30.9936 15.934 31.001 16 31.001C16.0705 31.001 16.14 30.9927 16.2096 30.9771C16.2407 30.9698 16.2709 30.9616 16.3012 30.9515L27.5465 27.2025C27.9291 27.0752 28.1873 26.7172 28.1873 26.3134V20.8405L20.6397 23.3563Z"
+                                        fill="#007EA7" />
+                                </svg>
+
+                            </span>
+                            <span class="flex-1 text-2xl font-normal text-[#00171F] leading-110">Bundle Packages</span>
+                            <svg class="h-4 w-4 text-slate-500 transition-transform duration-200 group-open:rotate-180"
+                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p
+                            class="px-4 pb-[14px] pl-[4.5rem] text-base font-normal text-[#00171F] max-w-[442px] w-full leading-[160%]">
+                            Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the
+                            best provider.
+                        </p>
+                    </details>
+
+                </div>
+            </div>
+
+            <!-- Right: image with offset navy block -->
+            <div class="w-full max-w-[530px]">
+                <img height="535" width="530" src="/assets/images/sec-5.png"
+                    alt="Two men reviewing utility plan documents"
+                    class="h-[535px] w-[530px] mt-[39px] rounded-[4px] object-cover cursor-pointer" />
+            </div>
+
+        </div>
+    </section>
+    <section class="section-parent-6 px-4 pb-[162px] max-lg:pb-[80px] max-md:pb-[60px] max-sm:pb-[40px]">
+        <div class="container max-w-[1140px] w-full mx-auto">
+            <div class="row">
+                <div class="flex flex-col items-center  justify-center text-center ">
+                    <p class="sec-6-head text-text text-5xl leading-[110%] font-normal max-sm:text-42">Why Choose Us for
+                        <span
+                            class="sec-6-span text-text text-5xl leading-[110%] font-bold max-sm:text-42 ">Utilities</span>
+                    </p>
+                    <p class="sec-6-para mt-4 max-w-[620px] w-full text-base leading-[150%] font-normal ">This
+                        emphasizes both the action and the benefits, drawing in potential customers with a clear
+                        value proposition. Let me know if you'd like any adjustments!</p>
+                </div>
+                <div
+                    class="mx-auto flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-w-[1140px] w-full gap-6 mt-[58px]">
+
+                    <div class="flex max-w-[424px] max-lg:max-w-[692px] max-lg:w-full max-lg:justify-center max-lg:items-center rounded-[4px] w-full flex-col justify-between bg-more p-10 text-white
+                transition-all duration-300
+                hover:shadow-[0_8px_25px_rgba(0,0,0,0.18)]">
+
+                        <div>
+                            <div class="mb-[30px]">
+                                <img height="278" width="277" class="cursor-pointer" src="/assets/images/thumb.png"
+                                    alt="thumb-img">
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-normal leading-[110%] text-white ">
+                                    Tailored Recommendations
+                                </h2>
+
+                                <p class="text-base font-normal mt-3 leading-[150%] text-white max-w-[344px] w-full ">
+                                    Our platform analyzes your unique energy needs and
+                                    preferences to suggest the best utility providers,
+                                    ensuring you get the most personalized options available.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <button class="mt-[22px] flex h-[52px] w-[64px] max-lg:ml-[-176px] cursor-pointer items-center
+                    justify-center rounded-[446px] bg-white text-black 
+                    transition-all duration-300
+                    hover:translate-x-1">
+
+                                <svg width="16" height="28" viewBox="0 0 16 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 14L2 14M9.63636 18L14 14L9.63636 10" stroke="#010101"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                    <div class=" flex gap-6 max-w-[692px] w-full flex-col ">
+
+
+                        <div
+                            class="two-card-parent1 flex gap-6 max-sm:flex-col max-sm:justify-center max-sm:items-center">
+                            <!-- Card 1 -->
+                            <div class="rounded-[4px] cursor-pointer border border-solid max-w-[344px] w-full border-cardborder bg-white p-6
+                    shadow-[0_2px_8px_rgba(0,0,0,0.08)]
+                    transition-all duration-300
+                    hover:-translate-y-1
+                    hover:shadow-[0_8px_20px_rgba(0,0,0,0.12)]">
+
+                                <!-- Icon -->
+                                <div class="mb-3">
+                                    <img height="60" width="60" class="cursor-pointer" src="/assets/images/traju.png"
+                                        alt="traj-img">
+                                </div>
+
+
+                                <h3
+                                    class="text-2xl font-normal leading-[110%] mt-[18px] max-w-[286px] w-full text-black">
+                                    Simplified Comparison Process
+                                </h3>
+
+                                <p class="mt-3 text-base font-normal leading-[150%] text-text max-w-[286px] w-full">
+                                    Our intuitive platform lets you compare the best utility providers in one place,
+                                    helping
+                                    you make a quick and informed decision.
+                                </p>
+
+                            </div>
+
+
+                            <!-- Card 2 -->
+                            <div class="rounded-[4px] cursor-pointer border border-solid max-w-[344px] w-full border-cardborder bg-white p-6
+                    shadow-[0_2px_8px_rgba(0,0,0,0.08)]
+                    transition-all duration-300
+                    hover:-translate-y-1
+                    hover:shadow-[0_8px_20px_rgba(0,0,0,0.12)]">
+
+                                <!-- Icon -->
+                                <div class="mb-3">
+                                    <img height="60" width="60" class="cursor-pointer"
+                                        src="/assets/images/working-time.png" alt="working-time-img">
+                                </div>
+
+
+                                <h3
+                                    class="text-2xl font-normal leading-[110%] mt-[18px] max-w-[286px] w-full text-black">
+                                    Save Time and Money
+                                </h3>
+
+                                <p class="mt-3 text-base font-normal leading-[150%] text-text max-w-[286px] w-full">
+                                    With up-to-date plans and pricing, you can be sure you’re getting the most
+                                    competitive
+                                    rates available.
+                                </p>
+
+                            </div>
+                        </div>
+
+
+
+                        <div
+                            class="two-card-parent2 flex gap-6 max-sm:flex-col max-sm:justify-center max-sm:items-center">
+                            <!-- Card 3 -->
+                            <div class="rounded-[4px] h-[286px] cursor-pointer border border-solid max-w-[344px] w-full border-cardborder bg-white p-6
+                    shadow-[0_2px_8px_rgba(0,0,0,0.08)]
+                    transition-all duration-300
+                    hover:-translate-y-1
+                    hover:shadow-[0_8px_20px_rgba(0,0,0,0.12)]">
+
+                                <!-- Icon -->
+                                <div class="mb-3">
+                                    <img height="60" width="60" class="cursor-pointer" src="/assets/images/paper.png"
+                                        alt="paper-img">
+                                </div>
+
+
+                                <h3
+                                    class="text-2xl font-normal leading-[110%] mt-[18px] max-w-[286px] w-full text-black">
+                                    No Service Interruptions
+                                </h3>
+
+                                <p class="mt-3 text-base font-normal leading-[150%] text-text max-w-[286px] w-full">
+                                    We take care of the entire switching process so you can enjoy a hassle-free
+                                    experience
+                                    with zero downtime.
+                                </p>
+
+                            </div>
+
+
+                            <!-- Card 4 -->
+                            <div class="rounded-[4px] h-[286px] cursor-pointer border border-solid max-w-[344px] w-full border-cardborder bg-white p-6
+                    shadow-[0_2px_8px_rgba(0,0,0,0.08)]
+                    transition-all duration-300
+                    hover:-translate-y-1
+                    hover:shadow-[0_8px_20px_rgba(0,0,0,0.12)]">
+
+                                <!-- Icon -->
+                                <div class="mb-3">
+                                    <img height="60" width="60" class="cursor-pointer"
+                                        src="/assets/images/costumer-service.png" alt="paper-img">
+                                </div>
+
+
+                                <h3
+                                    class="text-2xl font-normal leading-[110%] mt-[18px] max-w-[286px] w-full text-black">
+                                    Comprehensive Support
+                                </h3>
+
+                                <p class="mt-3 text-base font-normal leading-[150%] text-text max-w-[286px] w-full">
+                                    Whether you need assistance selecting a plan or during the switch, our dedicated
+                                    support
+                                    team is here to help every step of the way.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section-parent-7 px-4">
+        <div class="container max-w-[1284px] mx-auto w-full">
+            <div class="row">
+                <div class="flex flex-col items-center  justify-center text-center max-w-[565px] w-full mx-auto">
+                    <p class="sec-6-head text-text text-5xl leading-[110%] font-normal max-sm:text-42">Our <span
+                            class="sec-6-span text-text text-5xl leading-[110%] font-bold max-sm:text-42">Testimonials</span>
+                    </p>
+                    <p class="sec-6-para mt-4 max-w-[490px] w-full text-base leading-[150%] font-normal ">Lorem ipsum
+                        dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a
+                        bibendum</p>
+                </div>
+
+                <div class="relative max-w-[1140px] w-full mx-auto ">
+
+                    <!-- LEFT ARROW -->
+                    <button id="prevBtn" class="prevBtn absolute group   left-[-70px]! top-1/2 z-10 hidden xl:flex h-[40px] w-[40px]
+                -translate-y-1/2 cursor-pointer items-center justify-center
+                rounded-full border border-[rgba(0,23,31,1)] bg-white
+                transition-all duration-300
+                hover:bg-[#003e63] hover:text-white
+                sm:left-[-35px]">
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="group-hover:fill-white"
+                                d="M16.5198 2.40018C16.6643 2.53412 16.781 2.6952 16.8632 2.87423C16.9454 3.05326 16.9915 3.24673 16.9989 3.44359C17.0064 3.64046 16.9749 3.83685 16.9065 4.02157C16.838 4.20629 16.7338 4.37571 16.5998 4.52015L9.54606 12L16.5998 19.4799C16.7338 19.6244 16.838 19.7938 16.9064 19.9785C16.9749 20.1632 17.0063 20.3596 16.9989 20.5565C16.9915 20.7533 16.9453 20.9468 16.8631 21.1258C16.7809 21.3048 16.6643 21.4659 16.5198 21.5999C16.3754 21.7338 16.206 21.838 16.0213 21.9065C15.8365 21.9749 15.6402 22.0064 15.4433 21.9989C15.2464 21.9915 15.053 21.9454 14.874 21.8632C14.6949 21.781 14.5338 21.6643 14.3999 21.5199L6.40017 13.02C6.14293 12.7426 6 12.3783 6 12C6 11.6217 6.14293 11.2574 6.40017 10.98L14.3999 2.48018C14.5338 2.33571 14.6949 2.21904 14.8739 2.13684C15.053 2.05463 15.2464 2.0085 15.4433 2.00107C15.6402 1.99364 15.8365 2.02506 16.0213 2.09354C16.206 2.16202 16.3754 2.26622 16.5198 2.40018Z"
+                                fill="#00171F" />
+                        </svg>
+
+                    </button>
+
+
+                    <div class="overflow-hidden">
+
+                        <div id="slider" class="flex  -mx-2 transition-transform duration-500 ease-in-out pb-[162px]">
+                        </div>
+
+                    </div>
+
+
+                    <button id="nextBtn" class="nextBtn absolute group right-[-70px]! top-1/2 z-10 hidden xl:flex h-[40px] w-[40px]
+                -translate-y-1/2 cursor-pointer items-center justify-center
+                rounded-full bg-[white] border border-[rgba(0,23,31,1)] border-solid  text-white
+                transition-all duration-300
+                hover:bg-[#002d48]
+                sm:right-[-35px]">
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="group-hover:fill-white"
+                                d="M7.48017 2.40018C7.33571 2.53412 7.21904 2.6952 7.13684 2.87423C7.05463 3.05326 7.0085 3.24673 7.00107 3.44359C6.99364 3.64046 7.02506 3.83685 7.09354 4.02157C7.16202 4.20629 7.26621 4.37571 7.40017 4.52015L14.4539 12L7.40017 19.4799C7.26623 19.6244 7.16205 19.7938 7.09358 19.9785C7.02511 20.1632 6.99369 20.3596 7.00112 20.5565C7.00855 20.7533 7.05468 20.9468 7.13687 21.1258C7.21907 21.3048 7.33572 21.4659 7.48017 21.5999C7.62462 21.7338 7.79404 21.838 7.97875 21.9065C8.16346 21.9749 8.35985 22.0064 8.5567 21.9989C8.75356 21.9915 8.94702 21.9454 9.12605 21.8632C9.30507 21.781 9.46616 21.6643 9.6001 21.5199L17.5998 13.02C17.8571 12.7426 18 12.3783 18 12C18 11.6217 17.8571 11.2574 17.5998 10.98L9.6001 2.48018C9.46617 2.33571 9.30509 2.21904 9.12606 2.13684C8.94703 2.05463 8.75356 2.0085 8.55671 2.00107C8.35985 1.99364 8.16345 2.02506 7.97874 2.09354C7.79403 2.16202 7.62461 2.26622 7.48017 2.40018Z"
+                                fill="rgba(0,23,31,1)" />
+                        </svg>
+
+
+                    </button>
+                </div>
+
+                <div class="slider-btn flex gap-4 justify-center items-center">
+                    <button id="prevBtn" class="prevBtn xl:hidden group  left-[-70px]! top-1/2 z-10 flex h-[40px] w-[40px]
+                -translate-y-1/2 cursor-pointer items-center justify-center
+                rounded-full border border-[rgba(0,23,31,1)] bg-white
+                transition-all duration-300
+                hover:bg-[#003e63] hover:text-white
+                sm:left-[-35px]">
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="group-hover:fill-white"
+                                d="M16.5198 2.40018C16.6643 2.53412 16.781 2.6952 16.8632 2.87423C16.9454 3.05326 16.9915 3.24673 16.9989 3.44359C17.0064 3.64046 16.9749 3.83685 16.9065 4.02157C16.838 4.20629 16.7338 4.37571 16.5998 4.52015L9.54606 12L16.5998 19.4799C16.7338 19.6244 16.838 19.7938 16.9064 19.9785C16.9749 20.1632 17.0063 20.3596 16.9989 20.5565C16.9915 20.7533 16.9453 20.9468 16.8631 21.1258C16.7809 21.3048 16.6643 21.4659 16.5198 21.5999C16.3754 21.7338 16.206 21.838 16.0213 21.9065C15.8365 21.9749 15.6402 22.0064 15.4433 21.9989C15.2464 21.9915 15.053 21.9454 14.874 21.8632C14.6949 21.781 14.5338 21.6643 14.3999 21.5199L6.40017 13.02C6.14293 12.7426 6 12.3783 6 12C6 11.6217 6.14293 11.2574 6.40017 10.98L14.3999 2.48018C14.5338 2.33571 14.6949 2.21904 14.8739 2.13684C15.053 2.05463 15.2464 2.0085 15.4433 2.00107C15.6402 1.99364 15.8365 2.02506 16.0213 2.09354C16.206 2.16202 16.3754 2.26622 16.5198 2.40018Z"
+                                fill="#00171F" />
+                        </svg>
+
+                    </button>
+                    <button id="nextBtn" class="nextBtn  xl:hidden group right-[-70px]! top-1/2 z-10 flex h-[40px] w-[40px]
+                -translate-y-1/2 cursor-pointer items-center justify-center
+                rounded-full bg-[white] border border-[rgba(0,23,31,1)] border-solid  text-white
+                transition-all duration-300
+                hover:bg-[#002d48]
+                sm:right-[-35px]">
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="group-hover:fill-white"
+                                d="M7.48017 2.40018C7.33571 2.53412 7.21904 2.6952 7.13684 2.87423C7.05463 3.05326 7.0085 3.24673 7.00107 3.44359C6.99364 3.64046 7.02506 3.83685 7.09354 4.02157C7.16202 4.20629 7.26621 4.37571 7.40017 4.52015L14.4539 12L7.40017 19.4799C7.26623 19.6244 7.16205 19.7938 7.09358 19.9785C7.02511 20.1632 6.99369 20.3596 7.00112 20.5565C7.00855 20.7533 7.05468 20.9468 7.13687 21.1258C7.21907 21.3048 7.33572 21.4659 7.48017 21.5999C7.62462 21.7338 7.79404 21.838 7.97875 21.9065C8.16346 21.9749 8.35985 22.0064 8.5567 21.9989C8.75356 21.9915 8.94702 21.9454 9.12605 21.8632C9.30507 21.781 9.46616 21.6643 9.6001 21.5199L17.5998 13.02C17.8571 12.7426 18 12.3783 18 12C18 11.6217 17.8571 11.2574 17.5998 10.98L9.6001 2.48018C9.46617 2.33571 9.30509 2.21904 9.12606 2.13684C8.94703 2.05463 8.75356 2.0085 8.55671 2.00107C8.35985 1.99364 8.16345 2.02506 7.97874 2.09354C7.79403 2.16202 7.62461 2.26622 7.48017 2.40018Z"
+                                fill="rgba(0,23,31,1)" />
+                        </svg>
+
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mx-auto max-w-[916px] w-full px-4 py-[162px] max-lg:py-[80px] max-md:py-[60px] max-sm:py-[40px]">
+
+        <!-- Heading -->
+        <header class="text-center">
+            <h2 class="text-5xl font-normal text-[#00171F] sm:text-4xl">
+                Frequently Asked <span class="font-bold">Questions</span>
+            </h2>
+            <p class="mx-auto mt-[14px] max-w-[556px] w-full font-normal text-base leading-150 text-[#00171F]">
+                Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget
+                consectetur mi. Vulputate sapien a a bibendum
+            </p>
+        </header>
+
+        <!-- Accordion -->
+        <div id="faq" class="mt-12 space-y-4">
+
+            <!-- Item 1 (open by default) -->
+            <div class="group rounded-md bg-white shadow-md transition-colors duration-300 data-[open=true]:bg-[#003459] data-[open=true]:text-white"
+                data-open="true">
+                <h3>
+                    <button type="button"
+                        class="flex w-full items-center justify-between gap-4 px-6 py-6 text-left text-2xl"
+                        aria-expanded="true" aria-controls="faq-panel-1" id="faq-btn-1">
+                        <span>Can I switch providers if I'm currently in a contract?</span>
+                        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M7.5 12h9" stroke-linecap="round" />
+                            <path d="M12 7.5v9" stroke-linecap="round"
+                                class="origin-center transition-transform duration-300 group-data-[open=true]:scale-y-0" />
+                        </svg>
+                    </button>
+                </h3>
+                <div id="faq-panel-1" role="region" aria-labelledby="faq-btn-1"
+                    class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 group-data-[open=true]:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <p class="max-w-[722px] w-full px-6 pb-[26px] text-base  leading-150 text-[#FEFEFE]">
+                            Yes, but some contracts may include exit fees. We can guide you through the terms of your
+                            current plan and help you determine if switching now makes sense for you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="group rounded-md bg-white shadow-md transition-colors duration-300 data-[open=true]:bg-[#033256] data-[open=true]:text-white"
+                data-open="false">
+                <h3>
+                    <button type="button"
+                        class="flex w-full items-center justify-between gap-4 px-6 py-6 text-left text-2xl"
+                        aria-expanded="false" aria-controls="faq-panel-2" id="faq-btn-2">
+                        <span>Will my service be interrupted if I switch providers?</span>
+                        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M7.5 12h9" stroke-linecap="round" />
+                            <path d="M12 7.5v9" stroke-linecap="round"
+                                class="origin-center transition-transform duration-300 group-data-[open=true]:scale-y-0" />
+                        </svg>
+                    </button>
+                </h3>
+                <div id="faq-panel-2" role="region" aria-labelledby="faq-btn-2"
+                    class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 group-data-[open=true]:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <p class="max-w-[722px] w-full px-6 pb-[26px] text-base leading-150 text-[#FEFEFE]">
+                            Yes, but some contracts may include exit fees. We can guide you through the terms of your
+                            current plan and help you determine if switching now makes sense for you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="group rounded-md bg-white shadow-md transition-colors duration-300 data-[open=true]:bg-[#033256] data-[open=true]:text-white"
+                data-open="false">
+                <h3>
+                    <button type="button"
+                        class="flex w-full items-center justify-between gap-4 px-6 py-6 text-left text-2xl"
+                        aria-expanded="false" aria-controls="faq-panel-3" id="faq-btn-3">
+                        <span>How long does it take to switch providers?</span>
+                        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M7.5 12h9" stroke-linecap="round" />
+                            <path d="M12 7.5v9" stroke-linecap="round"
+                                class="origin-center transition-transform duration-300 group-data-[open=true]:scale-y-0" />
+                        </svg>
+                    </button>
+                </h3>
+                <div id="faq-panel-3" role="region" aria-labelledby="faq-btn-3"
+                    class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 group-data-[open=true]:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <p class="max-w-[722px] w-full px-6 pb-[26px] text-base leading-150 text-[#FEFEFE]">
+                            Yes, but some contracts may include exit fees. We can guide you through the terms of your
+                            current plan and help you determine if switching now makes sense for you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="group rounded-md bg-white shadow-md transition-colors duration-300 data-[open=true]:bg-[#033256] data-[open=true]:text-white"
+                data-open="false">
+                <h3>
+                    <button type="button"
+                        class="flex w-full items-center justify-between gap-4 px-6 py-6 text-left text-2xl"
+                        aria-expanded="false" aria-controls="faq-panel-4" id="faq-btn-4">
+                        <span>Is there a fee for switching providers?</span>
+                        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M7.5 12h9" stroke-linecap="round" />
+                            <path d="M12 7.5v9" stroke-linecap="round"
+                                class="origin-center transition-transform duration-300 group-data-[open=true]:scale-y-0" />
+                        </svg>
+                    </button>
+                </h3>
+                <div id="faq-panel-4" role="region" aria-labelledby="faq-btn-4"
+                    class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 group-data-[open=true]:grid-rows-[1fr]">
+                    <div class="overflow-hidden">
+                        <p class="max-w-[722px] w-full px-6 pb-[26px] text-base leading-150 text-[#FEFEFE]">
+                            Yes, but some contracts may include exit fees. We can guide you through the terms of your
+                            current plan and help you determine if switching now makes sense for you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="px-4">
+        <div
+            class="middle-div relative mb-[-173px] max-w-[1140px] w-full mx-auto bg-[url(/assets/images/div-img.png)] bg-center bg-cover rounded-[4px] flex flex-col justify-center items-center py-[54px] px-[260px] max-lg:px-[40px]">
+            <p class="div-head text-text text-5xl leading-[110%] font-normal max-sm:text-42">Join Our <span
+                    class="div-span text-text text-5xl leading-[110%] font-bold max-sm:text-42">Newsletter</span></p>
+            <p
+                class="div-para text-custompara text-base font-normal leading-[150%] mt-4 max-w-[620px] w-full text-center">
+                Stay up to date with the latest deals, energy-saving tips, and exclusive offers! Sign up for our
+                newsletter and never miss out on great savings opportunities again.</p>
+            <div
+                class="div-part flex w-full max-w-[476px] rounded-r-[100px] rounded-b-[100px] rounded-bl-[69px] mt-[42px] items-center border border-solid border-[rgba(0,0,0,0.2)] bg-white py-[9px] pl-[22px] pr-[9px]">
+
+                <input required type="text" placeholder="Enter your email"
+                    class="min-w-0 flex-1 bg-transparent text-[16px] font-normal text-input outline-none placeholder:text-input placeholder:text-base placeholder:leading-[110.00000000000001%] placeholder:font-normal">
+
+                <button type="button"
+                    class="flex items-center gap-[3px] cursor-pointer rounded-r-[50px] rounded-b-[50px] rounded-bl-[42px] bg-divbtn px-5 py-3 text-base font-bold leading-[100%] text-white hover:bg-more hover:transition-all hover:duration-500">
+                    <span>Submit</span>
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 19L19 6M6.52 6H19V18.48" stroke="white" stroke-width="1.93338"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footter bg-[url(/assets/images/footer.png)] bg-cover bg-center px-4">
+        <div
+            class="two-sides max-w-[1140px] w-full mx-auto flex gap-[531px] max-lg:gap-[43px] max-lg:flex-col pt-[232px]">
+            <div class="left-side">
+                <img height="84" width="223px" class="cursor-pointer" src="/assets/images/logo.png" alt="logo-img">
+                <p
+                    class="footer-para text-base leading-[150%] font-normal max-w-[297px] w-full text-customwhite mt-[28px]">
+                    Ut auctor nisi mauris eu tincidunt facilisi. Diam amet sollicitudin pretium maecenas ornare lacus
+                    arcu adipiscing. </p>
+                <p class="us text-xl font-bold leading-[100%] text-white mt-[36px]">Follow Us</p>
+                <div class="images flex gap-[15px] mt-4">
+                    <a target="_blank" href="https://www.linkedin.com/login/in/">
+                        <img height="33" width="33" class="cursor-pointer" src="/assets/images/in.png" alt="in-img">
+                    </a>
+                    <a target="_blank" href=" https://www.instagram.com/?hl=en">
+                        <img height="33" width="33" class="cursor-pointer" src="/assets/images/insta.png"
+                            alt="insta-img">
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/">
+                        <img height="33" width="33" class="cursor-pointer" src="/assets/images/facebook.png"
+                            alt="facebook-img">
+                    </a>
+                    <a target="_blank" href="https://x.com/?lang=en">
+                        <img height="33" width="33" class="cursor-pointer" src="/assets/images/twiter.png"
+                            alt="twiter-img">
+                    </a>
+                </div>
+            </div>
+            <div class="right-side ">
+                <div class="lists flex gap-[78px]">
+                    <div class="list1 flex flex-col">
+                        <p class="head-p text-nowrap mb-3 text-white text-xl leading-[150%] font-bold">Quick Link</p>
+                        <p class="normal-p text-para text-base leading-[100%] mb-[14px] font-normal cursor-pointer relative inline-block w-fit no-underline
+          after:content-[''] after:absolute after:w-full after:h-[2px]
+          after:bg-white after:left-0 after:bottom-[-2px]
+          after:scale-x-0 after:origin-left
+          after:transition-transform after:duration-300
+          hover:after:scale-x-100">About</p>
+                        <p class="normal-p text-nowrap text-para text-base leading-[100%] mb-[14px] font-normal cursor-pointer relative inline-block w-fit no-underline
+          after:content-[''] after:absolute after:w-full after:h-[2px]
+          after:bg-white after:left-0 after:bottom-[-2px]
+          after:scale-x-0 after:origin-left
+          after:transition-transform after:duration-300
+          hover:after:scale-x-100">How It Works</p>
+                        <p class="normal-p text-para text-base leading-[100%] mb-[14px] font-normal cursor-pointer relative inline-block w-fit no-underline
+          after:content-[''] after:absolute after:w-full after:h-[2px]
+          after:bg-white after:left-0 after:bottom-[-2px]
+          after:scale-x-0 after:origin-left
+          after:transition-transform after:duration-300
+          hover:after:scale-x-100">Services</p>
+                        <p class="normal-p text-para text-base leading-[100%] mb-[14px] font-normal cursor-pointer relative inline-block w-fit no-underline
+          after:content-[''] after:absolute after:w-full after:h-[2px]
+          after:bg-white after:left-0 after:bottom-[-2px]
+          after:scale-x-0 after:origin-left
+          after:transition-transform after:duration-300
+          hover:after:scale-x-100">Testimonials</p>
+                        <p class="normal-p text-nowrap text-para text-base leading-[100%] mb-[14px] font-normal cursor-pointer relative inline-block w-fit no-underline
+          after:content-[''] after:absolute after:w-full after:h-[2px]
+          after:bg-white after:left-0 after:bottom-[-2px]
+          after:scale-x-0 after:origin-left
+          after:transition-transform after:duration-300
+          hover:after:scale-x-100">Why Us</p>
+                        <p class="normal-p text-para text-base leading-[100%] mb-[14px] font-normal cursor-pointer relative inline-block w-fit no-underline
+          after:content-[''] after:absolute after:w-full after:h-[2px]
+          after:bg-white after:left-0 after:bottom-[-2px]
+          after:scale-x-0 after:origin-left
+          after:transition-transform after:duration-300
+          hover:after:scale-x-100">FAQ</p>
+                    </div>
+                    <div class="list2">
+                        <p class="head-p text-nowrap mb-3 text-white text-xl leading-[150%] font-bold">Services</p>
+                        <p class="normal-p text-nowrap text-para text-base leading-[100%] mb-[14px] font-normal cursor-pointer relative inline-block w-fit no-underline
+          after:content-[''] after:absolute after:w-full after:h-[2px]
+          after:bg-white after:left-0 after:bottom-[-2px]
+          after:scale-x-0 after:origin-left
+          after:transition-transform after:duration-300
+          hover:after:scale-x-100">Privacy Policy</p>
+                        <p class="normal-p text-nowrap text-para text-base leading-[100%] mb-[14px] font-normal cursor-pointer relative inline-block w-fit no-underline
+          after:content-[''] after:absolute after:w-full after:h-[2px]
+          after:bg-white after:left-0 after:bottom-[-2px]
+          after:scale-x-0 after:origin-left
+          after:transition-transform after:duration-300
+          hover:after:scale-x-100">Terms of Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="down-part flex justify-center items-center border-t border-solid border-downborder mt-[56px]">
+            <p class="down-text text-sm leading-[150%] py-5 font-normal text-para">© 2024 BILL CENTRAL, Inc. All Rights
+                Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- nav -->
+    <script>
+
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        const line1 = document.getElementById("line1");
+        const line2 = document.getElementById("line2");
+        const line3 = document.getElementById("line3");
+
+
+        menuBtn.addEventListener("click", function () {
+
+            mobileMenu.classList.toggle("hidden");
+
+            line1.classList.toggle("rotate-45");
+            line1.classList.toggle("translate-y-[8px]");
+
+            line2.classList.toggle("opacity-0");
+
+            line3.classList.toggle("-rotate-45");
+            line3.classList.toggle("-translate-y-[8px]");
+
+        });
+
+    </script>
+
+    <!-- slider -->
+    <script>
+        const track = document.getElementById("logo-track");
+
+        track.innerHTML += track.innerHTML;
+
+        let position = 0;
+        const speed = 1.8;
+
+        function moveLogos() {
+            position -= speed;
+
+            if (Math.abs(position) >= track.scrollWidth / 2) {
+                position = 0;
+            }
+
+            track.style.transform = `translateX(${position}px)`;
+
+            requestAnimationFrame(moveLogos);
+        }
+
+        moveLogos();
+    </script>
+
+    <!-- card-slider -->
+    <script>const steps = [
+            {
+                number: "1.",
+                title: "Enter Your Location And Preferences",
+                image: "/assets/images/card-1.png",
+                description: "Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider."
+            },
+            {
+                number: "2.",
+                title: "Compare Providers",
+                image: "/assets/images/card-2.png",
+                description: "Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider."
+            },
+            {
+                number: "3.",
+                title: "Switch Easily",
+                image: "/assets/images/card-4.png",
+                description: "Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider."
+            },
+            {
+                number: "4.",
+                title: "Choose The Best Plan",
+                image: "/assets/images/card-3.png",
+                description: "Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider."
+            }
+        ];
+
+        const stepsContainer = document.querySelector("#stepsContainer");
+
+        stepsContainer.innerHTML = steps.map((step) => {
+
+            return `
+        <div class="group relative cursor-pointer h-[661px] max-w-[360px] w-full overflow-hidden">
+
+            <img
+                src="${step.image}"
+                alt="${step.title}"
+                class="absolute inset-0 h-full w-full object-cover"
+            >
+
+            <div
+                class="absolute inset-0 bg-card
+                transition-all duration-500
+                group-hover:bg-black/20">
+            </div>
+
+            <div
+                class="absolute inset-0 flex items-center justify-center
+                transition-all duration-500
+                group-hover:opacity-0">
+
+                <p
+                    class="rotate-[-90deg] whitespace-nowrap
+                    text-32 font-normal text-text leading-[110.00000000000001%]">
+                    ${step.number} ${step.title}
+                </p>
+
+            </div>
+
+            <div
+                class="absolute inset-x-0 bottom-0
+                translate-y-full
+                bg-[#003d63] p-[32px] text-white
+                transition-all duration-500
+                group-hover:translate-y-0">
+
+                <h3 class="text-32 font-normal text-white leading-[110.00000000000001%]">
+                    ${step.number} ${step.title}
+                </h3>
+
+                <p class="mt-[14px] text-base leading-[160%] text-white">
+                    ${step.description}
+                </p>
+
+            </div>
+
+        </div>
+    `;
+
+        }).join("");</script>
+
+    <!-- three-card-slider -->
+    <script>
+        const reviews = [
+            {
+                name: "Cameron",
+                username: "@cameron",
+                image: "/assets/images/profile-1.png",
+                review:
+                    "Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio adipiscing elit vitae vestibulum vestibulum."
+            },
+
+            {
+                name: "Ronald",
+                username: "@ronald",
+                image: "/assets/images/profile-2.png",
+                review:
+                    "Lorem adipsic eing elit ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio, adipiscing elit vitae vestibulum vestibulum."
+            },
+
+            {
+                name: "Jay Shah",
+                username: "@jayshah",
+                image: "/assets/images/profile-3.png",
+                review:
+                    "Lorem adipsic eing elit ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio, adipiscing elit vitae vestibulum vestibulum."
+            },
+
+            {
+                name: "Cameron",
+                username: "@cameron",
+                image: "/assets/images/profile-1.png",
+                review:
+                    "Lorem adipsic eing elit ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio, adipiscing elit vitae vestibulum vestibulum."
+            },
+
+            {
+                name: "Ronald",
+                username: "@ronald",
+                image: "/assets/images/profile-2.png",
+                review:
+                    "Lorem adipsic eing elit ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio, adipiscing elit vitae vestibulum vestibulum."
+            },
+
+            {
+                name: "Jay Shah",
+                username: "@jayshah",
+                image: "/assets/images/profile-3.png",
+                review:
+                    "Lorem adipsic eing elit ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio, adipiscing elit vitae vestibulum vestibulum."
+            }
+        ];
+
+
+        // Slider
+        const slider = document.querySelector("#slider");
+
+        // IMPORTANT:
+        // Use classes instead of duplicate IDs
+        const prevBtns = document.querySelectorAll(".prevBtn");
+        const nextBtns = document.querySelectorAll(".nextBtn");
+
+
+        // Create cards
+        slider.innerHTML = reviews.map((review) => {
+
+            return `
+            <div class="review-slide w-full shrink-0 px-2 sm:w-1/2 lg:w-1/3">
+
+                <div
+                    class="mt-[62px] h-full cursor-pointer border border-solid border-[rgba(0,0,0,0.1)]
+                    bg-white p-5
+                    shadow-[0_2px_8px_rgba(0,0,0,0.08)]
+                    transition-all duration-300
+                    hover:-translate-y-1
+                    hover:shadow-[0_8px_20px_rgba(0,0,0,0.12)]">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-2">
+
+                        <img
+                            src="${review.image}"
+                            alt="${review.name}"
+                            class="h-[60px] w-[60px] rounded-full object-cover">
+
+                        <div>
+
+                            <h3
+                                class="text-2xl font-normal leading-[150%] text-black">
+                                ${review.name}
+                            </h3>
+
+                            <p
+                                class="text-base font-normal leading-[150%] text-customblack">
+                                ${review.username}
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Stars -->
+                    <div class="flex">
+
+                        ${Array(1)
+                    .fill("")
+                    .map(() => `
+                                <img
+                                    height="18"
+                                    width="99"
+                                    class="mt-[24px] cursor-pointer"
+                                    src="/assets/images/star.png"
+                                    alt="star-img">
+                            `)
+                    .join("")}
+
+                    </div>
+
+
+                    <!-- Review -->
+                    <p
+                        class="mt-[18px] text-base font-normal leading-[150%] text-custompara">
+                        ${review.review}
+                    </p>
+
+                </div>
+
+            </div>
+        `;
+
+        }).join("");
+
+
+        // Current slide
+        let currentIndex = 0;
+
+
+        // How many cards should be visible?
+        function getSlidesPerView() {
+
+            if (window.innerWidth < 640) {
+                return 1;
+            }
+
+            if (window.innerWidth < 1024) {
+                return 2;
+            }
+
+            return 3;
+        }
+
+
+        // Update slider position
+        function updateSlider() {
+
+            const slidesPerView = getSlidesPerView();
+
+            const slideWidth = 100 / slidesPerView;
+
+            slider.style.transform =
+                `translateX(-${currentIndex * slideWidth}%)`;
+        }
+
+
+        // NEXT FUNCTION
+        function nextSlide() {
+
+            const slidesPerView = getSlidesPerView();
+
+            const maxIndex = reviews.length - slidesPerView;
+
+            if (currentIndex < maxIndex) {
+
+                currentIndex++;
+
+            } else {
+
+                // Go back to first card
+                currentIndex = 0;
+            }
+
+            updateSlider();
+        }
+
+
+        // PREVIOUS FUNCTION
+        function prevSlide() {
+
+            const slidesPerView = getSlidesPerView();
+
+            const maxIndex = reviews.length - slidesPerView;
+
+            if (currentIndex > 0) {
+
+                currentIndex--;
+
+            } else {
+
+                // Go to last possible position
+                currentIndex = maxIndex;
+            }
+
+            updateSlider();
+        }
+
+
+        // --------------------------------
+        // TOP + BOTTOM PREVIOUS BUTTONS
+        // --------------------------------
+
+        prevBtns.forEach((button) => {
+
+            button.addEventListener("click", () => {
+                prevSlide();
+            });
+
+        });
+
+
+        // --------------------------------
+        // TOP + BOTTOM NEXT BUTTONS
+        // --------------------------------
+
+        nextBtns.forEach((button) => {
+
+            button.addEventListener("click", () => {
+                nextSlide();
+            });
+
+        });
+
+
+        // --------------------------------
+        // RESPONSIVE RESIZE
+        // --------------------------------
+
+        window.addEventListener("resize", () => {
+
+            const slidesPerView = getSlidesPerView();
+
+            const maxIndex = reviews.length - slidesPerView;
+
+            if (currentIndex > maxIndex) {
+
+                currentIndex = Math.max(0, maxIndex);
+            }
+
+            updateSlider();
+        });
+
+
+        // Initial position
+        updateSlider();
+
+    </script>
+
+  
+  
+    <!-- faq-2 -->
+    <script>
+        const items = document.querySelectorAll('#faq [data-open]');
+
+        items.forEach((item) => {
+            const btn = item.querySelector('button');
+            btn.addEventListener('click', () => {
+                const willOpen = item.dataset.open !== 'true';
+
+                // Close all (remove these 4 lines if you want multiple items open at once)
+                items.forEach((i) => {
+                    i.dataset.open = 'false';
+                    i.querySelector('button').setAttribute('aria-expanded', 'false');
+                });
+
+                item.dataset.open = String(willOpen);
+                btn.setAttribute('aria-expanded', String(willOpen));
+            });
+        });
+    </script>
+
+</body>
+
+</html>
