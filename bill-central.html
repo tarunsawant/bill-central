@@ -9,7 +9,7 @@
 </head>
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <link rel="stylesheet" href="./assets/style.css">
-<link rel="icon" type="image/png" href="/assets/images/logo.png">
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
 <style type="text/tailwindcss">
     @theme {
         /* colors */
@@ -39,6 +39,8 @@
         --leading-180: 180%;
         --leading-128: 128%;
         --leading-110: 110.00000000000001%;
+        --leading-115: 115%;
+        --leading-127%: 127%;
        /* font-size */
         --text-50: 50px;
         --text-32: 32px;
@@ -79,60 +81,60 @@
                         </a>
                         <div class="navbar-content hidden items-center lg:flex gap-6">
                             <a href="#about"
-                                class="text-base font-normal text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                class="text-base font-normal text-[#FFFFFF] leading-[100%] hover:transition hover:duration-300 hover:text-[#FFFFFF]">
                                 About
                             </a>
 
                             <a href="#how-it-works"
-                                class="text-base font-normal text-nowrap text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                class="text-base font-normal text-nowrap text-[#FFFFFF] leading-[100%] hover:transition hover:duration-300 hover:text-[#FFFFFF]">
                                 How It Works
                             </a>
 
                             <a href="#services"
-                                class="text-base font-normal text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                class="text-base font-normal text-[#FFFFFF] leading-[100%] hover:transition hover:duration-300 hover:text-[#FFFFFF]">
                                 Services
                             </a>
 
                             <a href="#testimonials"
-                                class="text-base font-normal text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                class="text-base font-normal text-[#FFFFFF] leading-[100%] hover:transition hover:duration-300 hover:text-[#FFFFFF]">
                                 Testimonials
                             </a>
 
                             <a href="#why-us"
-                                class="text-base font-normal text-nowrap text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                class="text-base font-normal text-nowrap text-[#FFFFFF] leading-[100%] hover:transition hover:duration-300 hover:text-[#FFFFFF]">
                                 Why Us
                             </a>
 
                             <a href="#faq"
-                                class="text-base font-normal text-white leading-[100%] hover:transition hover:duration-300 hover:text-white">
+                                class="text-base font-normal text-[#FFFFFF] leading-[100%] hover:transition hover:duration-300 hover:text-[#FFFFFF]">
                                 FAQ
                             </a>
 
                         </div>
 
 
+
                         <div class="navbar-btn hidden items-center lg:flex">
                             <a href="#get-started"
-                                class="group relative ml-3 flex w-full max-w-[154px] items-center gap-[3px] overflow-hidden whitespace-nowrap rounded-r-[50px] rounded-b-[50px] bg-white hover:text-white  px-5 py-3 text-base font-bold text-text transition-all duration-300 ease-out hover:bg-[#00A8E8] hover:shadow-[0_8px_20px_rgba(0,0,0,0.18)]">
+                                class="group relative ml-3 flex w-full max-w-[154px] items-center gap-[3px] rounded-r-[50px] rounded-b-[50px] bg-white px-5 py-3 text-base font-bold text-text transition-all duration-300 hover:bg-[#00A8E8] hover:text-white hover:shadow-[0_8px_20px_rgba(0,0,0,0.18)]">
 
-                                <span
-                                    class="relative z-10 transition-transform duration-300 group-hover:translate-x-[2px]">
+                                <span class="relative z-10 transition-all duration-300">
                                     Get Started
                                 </span>
 
-
-                                <span class="relative z-10 group">
+                                <span class="relative z-10">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-1">
-                                        <path class="group-hover:fill-white" d="M6 19L19 6M6.52 6H19V18.48"
-                                            stroke="#00171F" stroke-width="1.93338" stroke-linecap="round"
-                                            stroke-linejoin="round" />
+                                        xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-300">
+
+                                        <path d="M6 19L19 6M6.52 6H19V18.48" stroke="#00171F"
+                                            class="transition-colors duration-300 group-hover:stroke-white"
+                                            stroke-width="1.93338" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
 
                             </a>
                         </div>
+
                         <button id="menu-btn" type="button"
                             class="flex h-9 w-9 flex-col items-center justify-center gap-1.5 rounded-md border border-white/20 lg:hidden"
                             aria-label="Open menu">
@@ -208,16 +210,16 @@
                 </header>
                 <div class="relative pt-[53px]">
 
-                    <div class="flex flex-col lg:flex-row">
+                    <div class="flex flex-col lg:flex-row max-lg:pb-[40px]">
 
 
                         <div class="relative z-20 w-full lg:w-1/2">
 
                             <div class="text-part">
                                 <p
-                                    class="text-64 mt-[13px] max-lg:text-center max-lg:mx-auto text-white  max-sm:text-40 font-normal leading-[110.00000000000001%] max-w-[612px]">
+                                    class="text-64 mt-[13px] max-lg:text-center max-lg:mx-auto text-white  max-sm:text-[36px] font-normal leading-[110.00000000000001%] max-w-[612px]">
                                     Easily Compare<span
-                                        class=" text-64 text-white font-bold leading-[110.00000000000001%] max-sm:text-40 max-w-[612px] max-sm:text-45">Energy,
+                                        class=" text-64 text-white font-bold leading-[110.00000000000001%] max-sm:text-[36px] max-w-[612px] max-sm:text-45">Energy,
                                         Gas, and Internet</span>Plans
                                 </p>
                                 <p
@@ -235,8 +237,8 @@
                                         class="min-w-0 flex-1 bg-transparent text-[16px] font-normal text-input outline-none placeholder:text-input placeholder:text-base placeholder:leading-[110.00000000000001%] placeholder:font-normal">
 
                                     <button type="button"
-                                        class="flex items-center gap-[3px] cursor-pointer rounded-r-[50px] rounded-b-[50px] rounded-bl-[42px] bg-inputbtn px-5 py-3 text-base font-bold leading-[100%] text-white hover:bg-more hover:transition-all hover:duration-400">
-                                        <span>Compare</span>
+                                        class="flex items-center gap-[3px] max-w-[137px] w-full cursor-pointer rounded-r-[50px] rounded-b-[50px] rounded-bl-[42px] bg-inputbtn px-5 py-3 text-base font-bold leading-[100%] text-white hover:bg-more hover:transition-all hover:duration-400">
+                                        <span class="leading-[113%]">Compare</span>
 
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -252,7 +254,7 @@
                         <div class="relative z-20 mt-10 w-full lg:mt-0 lg:w-1/2">
 
                             <img height="816" width="618" src="/assets/images/sec-1-img.png" alt="Bill Central"
-                                class="relative cursor-pointer mx-auto h-[816px] w-[618px] object-contain lg:absolute">
+                                class="relative max-sm:h-[520px] cursor-pointer mx-auto h-[816px] w-[618px] object-contain lg:absolute">
 
                         </div>
 
@@ -274,15 +276,15 @@
 
                     <p
                         class="text-38 font-normal leading-[110.00000000000001%] max-w-[548px] w-full text-more max-lg:text-center max-lg:mx-auto">
-                        More than <span
+                        More Than <span
                             class="text-38 font-bold leading-[110.00000000000001%] max-w-[548px] w-full text-sky">80,000</span>+
-                        companies trust bill central
+                        Companies Trust Bill Central
                     </p>
 
                 </div>
-                <div class="w-full max-w-[1129px] overflow-hidden bg-white py-8">
+                <div class="w-full max-w-[1129px] overflow-hidden bg-white py-8 max-lg:pb-0">
                     <div id="logo-track"
-                        class="logos flex justify-between gap-[51px] items-center max-w-[1129px]  w-max">
+                        class="logos flex justify-between gap-[51px] max-sm:gap-5 items-center max-w-[1129px]  w-max">
                         <img height="62" width="126" class="cursor-pointer" src="/assets/images/icon-1.png"
                             alt="icon-1">
                         <img height="62" width="126" class="cursor-pointer" src="/assets/images/icon-2.png"
@@ -305,7 +307,7 @@
 
     </section>
     <section
-        class="section-parent-3 px-4 pt-[180px] max-lg:pt-[80px] max-md:pt-[60px] max-sm:pt-[40px] pb-[162px] max-lg:pb-[80px] max-md:pb-[60px] max-sm:pb-[40px]">
+        class="section-parent-3 px-4 pt-[162px] max-lg:pt-[80px] max-md:pt-[60px] max-sm:pt-[40px] pb-[162px] max-lg:pb-[80px] max-md:pb-[60px] max-sm:pb-[40px]">
         <div class="container max-w-[1140px] w-full mx-auto ">
             <div class="row">
                 <div
@@ -322,7 +324,7 @@
                                 Energy</span> Made Simple
                         </p>
                         <p
-                            class="sec-2-para text-text text-base max-lg:text-center font-nrmal leading-[150%] max-w-[558px] w-full mt-[16px]">
+                            class="sec-2-para text-[#00171F] text-base max-lg:text-center font-nrmal leading-[150%] max-w-[558px] w-full mt-[16px]">
                             Say goodbye to confusing energy plans! We simplify the process by providing clear and
                             competitive electricity and gas recommendations. Whether you're moving or just seeking a
                             better deal, our platform connects you with the best energy providers quickly and easily,
@@ -330,7 +332,7 @@
                         <p
                             class="beni text-2xl max-lg:text-center text-more leading-[110.00000000000001%] font-normal mt-[38px]">
                             Benefits
-                            of Comparing Energy Plans</p>
+                            Of Comparing Energy Plans</p>
                         <div class="main-part-p">
                             <ul
                                 class="list-disc pl-6 max-lg:ml-[85px] flex flex-col gap-2 text-base leading-[150%] text-text font-normal mt-[28px]">
@@ -340,7 +342,7 @@
                             </ul>
                         </div>
                         <button
-                            class="sec-2-btn max-lg:justify-center max-lg:items-center max-lg:flex max-lg:mx-auto cursor-pointer bg-sky flex items-center py-3 px-5 gap-[3px] mt-[42px] rounded-br-[50px] rounded-tr-[50px] rounded-bl-[43px] hover:bg-more hover:transition-all hover:duration-400">
+                            class="sec-2-btn max-w-[201px] w-full max-lg:justify-center max-lg:items-center max-lg:flex max-lg:mx-auto cursor-pointer bg-sky flex items-center py-3 px-5 gap-[3px] mt-[42px] rounded-br-[50px] rounded-tr-[50px] rounded-bl-[43px] hover:bg-more hover:transition-all hover:duration-400">
                             <p class="btn-p text-base font-bold leading-[100%] text-white ">Compare With Us</p>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -356,7 +358,7 @@
     <section class="section-parent-4">
         <div class="container max-w-[1440px] mx-auto w-full">
             <div class="row w-full">
-                <div class="mx-auto mb-8 max-w-[610px] w-full px-4 text-center">
+                <div class="mx-auto mb-[58px] max-w-[610px] w-full px-4 text-center">
                     <h2 class=" text-5xl leading-[110.00000000000001%] max-sm:text-42 text-text font-normal ">
                         Simple Steps To
                         <span
@@ -368,20 +370,22 @@
                     </p>
                 </div>
                 <div id="stepsContainer"
-                    class="flex flex-col max-lg:justify-center max-lg:items-center overflow-hidden px-4 sm:flex-row sm:px-0">
+                    class="flex flex-col max-lg:justify-center max-sm:gap-5 max-lg:items-center overflow-hidden px-4 sm:flex-row sm:px-0">
                 </div>
 
             </div>
         </div>
     </section>
-    <section class="max-w-[1140px] w-full mx-auto px-4 py-[162px] max-lg:py-[80px] max-md:py-[60px] max-sm:py-[40px]">
-        <div class="flex gap-[73px] items-center max-lg:flex-col">
+    <section
+        class=" section-parent-5 max-w-[1140px] w-full mx-auto px-4 py-[162px] max-lg:py-[80px] max-md:py-[60px] max-sm:py-[40px]">
+        <div class="flex gap-[73px] max-sm:gap-[10px] items-center max-lg:flex-col">
 
             <!-- Left: accordion -->
             <div>
-                <h2 class="text-5xl max-w-[456px] w-full font-normal text-[#00171F] leading-110 mb-[46px]">
+                <h2
+                    class="text-5xl max-w-[456px] w-full font-normal text-[#00171F] max-sm:text-40 leading-110 mb-[46px] max-sm:text-center">
                     Comprehensive <br />
-                    Utility <span class="font-bold">Comparisons</span>
+                    Utility <span class="font-bold max-sm:text-40">Comparisons</span>
                 </h2>
 
                 <div class="space-y-4 max-w-[558px] w-full">
@@ -543,7 +547,7 @@
             <div class="w-full max-w-[530px]">
                 <img height="535" width="530" src="/assets/images/sec-5.png"
                     alt="Two men reviewing utility plan documents"
-                    class="h-[535px] w-[530px] mt-[39px] rounded-[4px] object-cover cursor-pointer" />
+                    class="h-[535px] w-[530px] mt-[39px] max-sm:h-[446px] max-sm:w-[446px] rounded-[4px] object-cover cursor-pointer" />
             </div>
 
         </div>
@@ -552,7 +556,7 @@
         <div class="container max-w-[1140px] w-full mx-auto">
             <div class="row">
                 <div class="flex flex-col items-center  justify-center text-center ">
-                    <p class="sec-6-head text-text text-5xl leading-[110%] font-normal max-sm:text-42">Why Choose Us for
+                    <p class="sec-6-head text-text text-5xl leading-[110%] font-normal max-sm:text-42">Why Choose Us For
                         <span
                             class="sec-6-span text-text text-5xl leading-[110%] font-bold max-sm:text-42 ">Utilities</span>
                     </p>
@@ -563,7 +567,7 @@
                 <div
                     class="mx-auto flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-w-[1140px] w-full gap-6 mt-[58px]">
 
-                    <div class="flex max-w-[424px] max-lg:max-w-[692px] max-lg:w-full max-lg:justify-center max-lg:items-center rounded-[4px] w-full flex-col justify-between bg-more p-10 text-white
+                    <div class="flex max-w-[424px]  max-lg:w-full max-lg:justify-center max-lg:items-center rounded-[4px] w-full flex-col justify-between bg-more p-10 text-white
                 transition-all duration-300
                 hover:shadow-[0_8px_25px_rgba(0,0,0,0.18)]">
 
@@ -588,7 +592,7 @@
                         </div>
 
                         <div>
-                            <button class="mt-[22px] flex h-[52px] w-[64px] max-lg:ml-[-176px] cursor-pointer items-center
+                            <button class="mt-[22px] flex h-[52px] w-[64px] max-lg:ml-[-176px] max-sm:ml-[-105px] cursor-pointer items-center
                     justify-center rounded-[446px] bg-white text-black 
                     transition-all duration-300
                     hover:translate-x-1">
@@ -741,7 +745,9 @@
                     <p class="sec-6-head text-text text-5xl leading-[110%] font-normal max-sm:text-42">Our <span
                             class="sec-6-span text-text text-5xl leading-[110%] font-bold max-sm:text-42">Testimonials</span>
                     </p>
-                    <p class="sec-6-para mt-4 max-w-[490px] w-full text-base leading-[150%] font-normal ">Lorem ipsum
+                    <p
+                        class="sec-6-para mt-4 max-w-[490px] w-full text-[#00171F] text-base leading-[150%] font-normal ">
+                        Lorem ipsum
                         dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a
                         bibendum</p>
                 </div>
@@ -767,7 +773,7 @@
 
                     <div class="overflow-hidden">
 
-                        <div id="slider" class="flex  -mx-2 transition-transform duration-500 ease-in-out pb-[162px]">
+                        <div id="slider" class="flex  -mx-2 transition-transform duration-500 ease-in-out">
                         </div>
 
                     </div>
@@ -790,7 +796,7 @@
                     </button>
                 </div>
 
-                <div class="slider-btn flex gap-4 justify-center items-center">
+                <div class="slider-btn flex gap-4 justify-center mt-[53px] items-center">
                     <button id="prevBtn" class="prevBtn xl:hidden group  left-[-70px]! top-1/2 z-10 flex h-[40px] w-[40px]
                 -translate-y-1/2 cursor-pointer items-center justify-center
                 rounded-full border border-[rgba(0,23,31,1)] bg-white
@@ -828,8 +834,8 @@
 
         <!-- Heading -->
         <header class="text-center">
-            <h2 class="text-5xl font-normal text-[#00171F] sm:text-4xl">
-                Frequently Asked <span class="font-bold">Questions</span>
+            <h2 class="heading-h2 text-[48px] font-normal leading-[110%] text-[#00171F] sm:text-4xl">
+                Frequently Asked <span class="font-bold text-[48px]">Questions</span>
             </h2>
             <p class="mx-auto mt-[14px] max-w-[556px] w-full font-normal text-base leading-150 text-[#00171F]">
                 Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget
@@ -838,7 +844,7 @@
         </header>
 
         <!-- Accordion -->
-        <div id="faq" class="mt-12 space-y-4">
+        <div id="faq" class="mt-12 max-sm:mt-5 space-y-4">
 
             <!-- Item 1 (open by default) -->
             <div class="group rounded-md bg-white shadow-md transition-colors duration-300 data-[open=true]:bg-[#003459] data-[open=true]:text-white"
@@ -848,7 +854,7 @@
                         class="flex w-full items-center justify-between gap-4 px-6 py-6 text-left text-2xl"
                         aria-expanded="true" aria-controls="faq-panel-1" id="faq-btn-1">
                         <span>Can I switch providers if I'm currently in a contract?</span>
-                        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg class="h-[28px] w-[28px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5" aria-hidden="true">
                             <circle cx="12" cy="12" r="10" />
                             <path d="M7.5 12h9" stroke-linecap="round" />
@@ -876,7 +882,7 @@
                         class="flex w-full items-center justify-between gap-4 px-6 py-6 text-left text-2xl"
                         aria-expanded="false" aria-controls="faq-panel-2" id="faq-btn-2">
                         <span>Will my service be interrupted if I switch providers?</span>
-                        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg class="h-[28px] w-[28px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5" aria-hidden="true">
                             <circle cx="12" cy="12" r="10" />
                             <path d="M7.5 12h9" stroke-linecap="round" />
@@ -904,7 +910,7 @@
                         class="flex w-full items-center justify-between gap-4 px-6 py-6 text-left text-2xl"
                         aria-expanded="false" aria-controls="faq-panel-3" id="faq-btn-3">
                         <span>How long does it take to switch providers?</span>
-                        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg class="h-[28px] w-[28px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5" aria-hidden="true">
                             <circle cx="12" cy="12" r="10" />
                             <path d="M7.5 12h9" stroke-linecap="round" />
@@ -932,7 +938,7 @@
                         class="flex w-full items-center justify-between gap-4 px-6 py-6 text-left text-2xl"
                         aria-expanded="false" aria-controls="faq-panel-4" id="faq-btn-4">
                         <span>Is there a fee for switching providers?</span>
-                        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg class="h-[28px] w-[28px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5" aria-hidden="true">
                             <circle cx="12" cy="12" r="10" />
                             <path d="M7.5 12h9" stroke-linecap="round" />
@@ -957,41 +963,43 @@
     <section class="px-4">
         <div
             class="middle-div relative mb-[-173px] max-w-[1140px] w-full mx-auto bg-[url(/assets/images/div-img.png)] bg-center bg-cover rounded-[4px] flex flex-col justify-center items-center py-[54px] px-[260px] max-lg:px-[40px]">
-            <p class="div-head text-text text-5xl leading-[110%] font-normal max-sm:text-42">Join Our <span
-                    class="div-span text-text text-5xl leading-[110%] font-bold max-sm:text-42">Newsletter</span></p>
+            <p class="div-head text-text text-5xl leading-[110%] font-normal max-sm:text-42 max-sm:text-center">Join Our
+                <span class="div-span text-text text-5xl leading-[110%] font-bold max-sm:text-42">Newsletter</span></p>
             <p
                 class="div-para text-custompara text-base font-normal leading-[150%] mt-4 max-w-[620px] w-full text-center">
                 Stay up to date with the latest deals, energy-saving tips, and exclusive offers! Sign up for our
                 newsletter and never miss out on great savings opportunities again.</p>
-            <div
-                class="div-part flex w-full max-w-[476px] rounded-r-[100px] rounded-b-[100px] rounded-bl-[69px] mt-[42px] items-center border border-solid border-[rgba(0,0,0,0.2)] bg-white py-[9px] pl-[22px] pr-[9px]">
+            <form id="emailForm">
+                <div
+                    class="div-part mt-[42px] flex max-w-[476px] w-full max-sm:flex-col max-sm:gap-3 items-center rounded-r-[100px] rounded-b-[100px] rounded-bl-[69px] border border-solid border-[rgba(0,0,0,0.2)] bg-white py-[9px] pl-[22px] pr-[9px]">
+                    <input id="email" required type="email" name="email" placeholder="Enter your email"
+                        class="min-w-0 flex-1 bg-transparent text-[16px] font-normal text-input outline-none placeholder:text-input placeholder:text-base placeholder:font-normal placeholder:leading-[110%]" />
 
-                <input required type="text" placeholder="Enter your email"
-                    class="min-w-0 flex-1 bg-transparent text-[16px] font-normal text-input outline-none placeholder:text-input placeholder:text-base placeholder:leading-[110.00000000000001%] placeholder:font-normal">
+                    <button type="submit"
+                        class="flex cursor-pointer max-w-[122px] w-full items-center gap-[3px] rounded-r-[50px] rounded-b-[50px] rounded-bl-[42px] bg-divbtn px-5 py-3 text-base font-bold leading-[100%] text-white transition-all duration-500 hover:bg-more">
+                        <span>Submit</span>
 
-                <button type="button"
-                    class="flex items-center gap-[3px] cursor-pointer rounded-r-[50px] rounded-b-[50px] rounded-bl-[42px] bg-divbtn px-5 py-3 text-base font-bold leading-[100%] text-white hover:bg-more hover:transition-all hover:duration-500">
-                    <span>Submit</span>
-
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 19L19 6M6.52 6H19V18.48" stroke="white" stroke-width="1.93338"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-
-            </div>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 19L19 6M6.52 6H19V18.48" stroke="white" stroke-width="1.93338"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </section>
-    <footer class="footter bg-[url(/assets/images/Footer.png)] bg-cover bg-center px-4">
+    <footer class="footter bg-[url(/assets/images/Footer.png)] min-h-fit bg-cover bg-center px-4">
         <div
             class="two-sides max-w-[1140px] w-full mx-auto flex gap-[531px] max-lg:gap-[43px] max-lg:flex-col pt-[232px]">
-            <div class="left-side">
-                <img height="84" width="223px" class="cursor-pointer" src="/assets/images/logo.png" alt="logo-img">
+            <div class="left-side h-[293px]">
+                <a href="">
+                    <img height="84" width="223px" class="cursor-pointer" src="/assets/images/logo.png" alt="logo-img">
+                </a>
                 <p
                     class="footer-para text-base leading-[150%] font-normal max-w-[297px] w-full text-customwhite mt-[28px]">
                     Ut auctor nisi mauris eu tincidunt facilisi. Diam amet sollicitudin pretium maecenas ornare lacus
                     arcu adipiscing. </p>
-                <p class="us text-xl font-bold leading-[100%] text-white mt-[36px]">Follow Us</p>
+                <p class="us text-xl font-bold leading-[115%] text-white mt-[36px]">Follow Us</p>
                 <div class="images flex gap-[15px] mt-4">
                     <a target="_blank" href="https://www.linkedin.com/login/in/">
                         <img height="33" width="33" class="cursor-pointer" src="/assets/images/in.png" alt="in-img">
@@ -1011,7 +1019,7 @@
                 </div>
             </div>
             <div class="right-side ">
-                <div class="lists flex gap-[78px]">
+                <div class="lists flex gap-[78px] max-sm:gap-[40px]">
                     <div class="list1 flex flex-col">
                         <p class="head-p text-nowrap mb-3 text-white text-xl leading-[150%] font-bold">Quick Link</p>
                         <p class="normal-p text-para text-base leading-[100%] mb-[14px] font-normal cursor-pointer relative inline-block w-fit no-underline
@@ -1074,6 +1082,25 @@
                 Reserved.</p>
         </div>
     </footer>
+
+
+
+    <script>
+        const emailForm = document.getElementById("emailForm");
+
+        emailForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const email = document.getElementById("email").value.trim();
+
+            if (emailForm.checkValidity()) {
+                alert("Email submitted successfully!");
+                console.log("Email:", email);
+            } else {
+                emailForm.reportValidity();
+            }
+        });
+    </script>
 
     <!-- nav -->
     <script>
@@ -1277,12 +1304,11 @@
             <div class="review-slide w-full shrink-0 px-2 sm:w-1/2 lg:w-1/3">
 
                 <div
-                    class="mt-[62px] h-full cursor-pointer border border-solid border-[rgba(0,0,0,0.1)]
+                    class="mt-[62px] h-[256px] max-w-[364px] w-full cursor-pointer rounded-[4px] border border-solid border-[rgba(0,0,0,0.1)]
                     bg-white p-5
-                    shadow-[0_2px_8px_rgba(0,0,0,0.08)]
                     transition-all duration-300
                     hover:-translate-y-1
-                    hover:shadow-[0_8px_20px_rgba(0,0,0,0.12)]">
+                    shadow-[0_8px_20px_rgba(0,0,0,0.12)]">
 
                     <!-- Profile -->
                     <div class="flex items-center gap-2">
@@ -1464,8 +1490,8 @@
 
     </script>
 
-  
-  
+
+
     <!-- faq-2 -->
     <script>
         const items = document.querySelectorAll('#faq [data-open]');
